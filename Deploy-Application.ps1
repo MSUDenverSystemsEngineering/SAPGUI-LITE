@@ -65,12 +65,12 @@ Try {
 	## Variables: Application
 	[string]$appVendor = 'SAP'
 	[string]$appName = 'GUI'
-	[string]$appVersion = '750 P62 Lite'
+	[string]$appVersion = '760 P3 Lite'
 	[string]$appArch = 'x86'
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
 	[string]$appScriptVersion = '3.7.0.1'
-	[string]$appScriptDate = '07/15/2019'
+	[string]$appScriptDate = '01/15/20120'
 	[string]$appScriptAuthor = 'Truong Nguyen'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
@@ -139,7 +139,7 @@ Try {
 		}
 
 		## <Perform Installation tasks here>
-		Execute-Process -Path "$dirFiles\Setup\NwSapSetup.exe" -Parameters "/package:`"SAPGUI_750_LITE`" /silent"
+		Execute-Process -Path "$dirFiles\Setup\NwSapSetup.exe" -Parameters "/package:`"SAPGUI_760_LITE`" /silent"
 
 
 		##*===============================================
